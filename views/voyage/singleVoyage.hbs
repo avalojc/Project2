@@ -1,16 +1,20 @@
-<h1>{{_id}}</h1>
-<p> nameTrip: {{nameTrip}}</p>
-<p> whereFrom: {{whereFrom}}</p>
-<p> whereTo: {{whereTo}}</p>
-<p> dateStart: {{dateStart}} </p>
-<p> dateEnd: {{dateEnd}} </p>
-<p> flexibleDate: {{flexibleDate}} </p>
-<a href="/voyage/edit/{{_id}}">
+<h1>{{singleVoyage._id}}</h1>
+<p> nameTrip: {{singleVoyage.nameTrip}}</p>
+<p> whereFrom: {{singleVoyage.whereFrom}}</p>
+<p> whereTo: {{singleVoyage.whereTo}}</p>
+<p> dateStart: {{singleVoyage.dateStart}} </p>
+<p> dateEnd: {{singleVoyage.dateEnd}} </p>
+<p> flexibleDate: {{singleVoyage.flexibleDate}} </p>
+<a href="/voyage/edit/{{singleVoyage._id}}">
         <button>
                 Edit Voyage
         </button>
 </a>
-<form action="/voyage/{{_id}}?_method=DELETE" method="POST">
+<form action="/voyage/{{singleVoyage._id}}?_method=DELETE" method="POST">
     <input type="submit" value="Delete Voyage"/>
  </form> 
+{{#each voyageUser}}
+    <p>{{nameTrip}}</p>
+{{/each}}
+
 <a href="/voyage">Go Back</a>

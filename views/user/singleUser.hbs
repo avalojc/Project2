@@ -1,14 +1,9 @@
-<h1>{{_id}}</h1>
-<p> nameTrip: {{nameTrip}}</p>
-<p> whereFrom: {{whereFrom}}</p>
-<p> whereTo: {{whereTo}}</p>
-<p> dateStart: {{dateStart}} </p>
-<p> dateEnd: {{dateEnd}} </p>
-<p> flexibleDate: {{flexibleDate}} </p>
+<h1>{{singleUser._id}}</h1>
+<p> user: {{singleUser.user}}</p>
+<p> password: {{singleUser.password}}</p>
+<p> voyageId: {{singleUser.voyageId}}</p>
 <a href="/user/edit/{{_id}}">
-        <button>
-                Edit User
-        </button>
+        <button> Edit User </button>
 </a>
 <form action="/user/{{_id}}?_method=DELETE" method="POST">
     <input type="submit" value="Delete User"/>

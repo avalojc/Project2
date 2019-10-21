@@ -1,6 +1,7 @@
 const express = require('express')
 
 const voyageApi = require('../models/voyage.js')
+const userApi = require('../models/user.js')
 
 const voyageRouter = express.Router()
 
@@ -26,7 +27,11 @@ voyageRouter.get('/voyage', (req, res) => {
 voyageRouter.get('/voyage/:voyageId', (req, res) => {
   voyageApi.getSingleVoyage(req.params.voyageId)
     .then((singleVoyage) => {
-      res.render('voyage/singleVoyage', singleVoyage)
+      userApi.getAllUserVoyageByVoyageId(req.params.id)
+        .then((voyageUser) =>{
+          res.render('voyage/singleVoyage', {singleVoyage, voyageUser})
+        })
+      
  //     res.json(singleVoyage)
     })
 })

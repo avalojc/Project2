@@ -1,9 +1,10 @@
 <form action="/legger/{{_id}}?_method=PUT" method="POST">
-    <input type="text" name="nameTrip" placeholder="nameTrip" value="{{nameTrip}}"/> <br>
-    <input type="text" name="whereFrom" placeholder="whereFrom" value="{{whereFrom}}"/> <br>
-    <input type="text" name="whereTo" placeholder="whereTo" value="{{whereTo}}"/> <br>
-    <input type="date" name="dateStart" placeholder="dateStart" value="{{dateStart}}"/> <br>
-    <input type="date" name="dateEnd" placeholder="dateEnd" value="{{dateEnd}}"/> <br>
-    <input type="boolean" name="flexibleDate" placeholder="flexibleDate" value="{{flexibleDate}}"/> <br>
+    <input type="text" name="leg" placeholder="leg" value="{{leg}}"/> <br>
+    <input type="text" name="hubInitial" placeholder="hubInitial" value="{{hubInitial}}"/> <br>
+    <input type="text" name="hubTerminus" placeholder="hubTerminus" value="{{hubTerminus}}"/> <br>
+    <input type="Boolean" name="direction" placeholder="direction" value="{{direction}}"/> <br>
+    <input type="Boolean" name="oneWayOrRoundTrip" placeholder="oneWayOrRoundTrip" value="{{oneWayOrRoundTrip}}"/> <br>
+    <input type="text" name="methodOfTransport" placeholder="methodOfTransport" value="{{methodOfTransport}}"/> <br>
+    <input type="number" name="costOfLeg" placeholder="costOfLeg" value="{{costOfLeg}}"/> <br>
     <input type="submit" value="Save"/>
 </form>

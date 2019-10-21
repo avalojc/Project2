@@ -1,10 +1,8 @@
 <h1> Create New User</h1>
+
 <form action="/user" method="POST">
-    <input type="text" name="nameTrip" placeholder="nameTrip" /> <br>
-    <input type="text" name="whereFrom" placeholder="whereFrom" /> <br>
-    <input type="text" name="whereTo" placeholder="whereTo" /> <br>
-    <input type="date" name="dateStart" placeholder="dateStart" /> <br>
-    <input type="date" name="dateEnd" placeholder="dateEnd" /> <br>
-    <input type="boolean" name="flexibleDate" placeholder="flexibleDate" /> <br>
+    <input type="text" name="user" placeholder="user" /> <br>
+    <input type="text" name="password" placeholder="password" /> <br>
+    <input type="text" name="voyageId" value="{{voyageId}}" />
     <input type="submit" value="Save"/>
 </form>

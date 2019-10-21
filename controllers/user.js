@@ -2,11 +2,17 @@ const express = require('express')
 
 const userApi = require('../models/user.js')
 
+
 const userRouter = express.Router()
 
 userRouter.get('/user/new', (req, res) => {
   res.render('user/createUser')
 })
+//test
+userRouter.get('user/new/:voyageId', (req, res) => {
+  res.render('user/createUser', {voyageId: req.params.voyageId} )
+})
+
 userRouter.get('/user/edit/:userId', (req, res) => {
   userApi.getSingleUser(req.params.userId)
     .then((singleUser) => {

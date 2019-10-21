@@ -1,8 +1,12 @@
-<h1>Userr</h1>
-<a href="/user/new/">Add Issue</a>
+<h1>User</h1>
+<a href="/user/new/">
+    <button>
+        Add User
+    </button>
+</a>
 <ol>
 {{#each allUser}}
 <a href="/user/{{_id}}"/>
-    <li>{{nameTrip}}</li>
+    <li>{{user}}</li>
 {{/each}}
 </ol>

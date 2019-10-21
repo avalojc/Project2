@@ -3,6 +3,7 @@ const LeggerSchema = new mongoose.Schema({
   //overall trip
 
   //leg maker
+  leg: String,
   hubInitial: String, //start of leg
   hubTerminus: String, //end of leg
   direction: Boolean, //going home or coming back

@@ -3,13 +3,7 @@ const UserSchema = new mongoose.Schema({
    //logInSchema
   user: String,
   password:String,
-  // //leg maker
-  // hubInitial: String, //start of leg
-  // hubTerminus: String, //end of leg
-  // direction: Boolean, //going home or coming back
-  // oneWayOrRoundTrip: Boolean, //round trip or one way?
-  // methodOfTransport: String, //Planes, Trains, Automobile, Bus, Scooter, Hitchhiking, TukTuk, ect
-  // costOfLeg: Number,
+  voyageId: mongoose.ObjectId, 
 })
 
 const UserCollection = mongoose.model('User', UserSchema)
@@ -17,6 +11,11 @@ const UserCollection = mongoose.model('User', UserSchema)
 const getAllUser = () => {
   return UserCollection.find({})
 }
+//get all users by voyage id????
+const getAllUserVoyageByVoyageId = (voyageId) => {
+  return UserCollection.find({voyageId: voyageId})
+}
+
 //getone
 const getSingleUser = (UserId) => {
   return UserCollection.findById(UserId)
@@ -36,8 +35,9 @@ const deleteUser = (UserId) => {
 
 module.exports = {
   getAllUser,
+  getAllUserVoyageByVoyageId,
   getSingleUser,
   addNewUser,
   editUser,
-  deleteUser
+  deleteUser,
 }
