@@ -3,7 +3,7 @@ const UserSchema = new mongoose.Schema({
    //logInSchema
   user: String,
   password:String,
-  voyageId: mongoose.ObjectId, 
+  // voyageId: mongoose.ObjectId, 
 })
 
 const UserCollection = mongoose.model('User', UserSchema)
