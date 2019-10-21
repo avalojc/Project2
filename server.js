@@ -52,7 +52,7 @@ app.use(express.static(__dirname+"/public"))
 /* Step 3.b
  *
  * set the view engine of express to use the hbs (handlebars) package 
- */
+ */ //the view engine
 app.set('view engine', 'hbs')
 
 
@@ -60,8 +60,8 @@ app.set('view engine', 'hbs')
  *
  * add router for the application to use. The first argument is a prefix to all
  * the paths defined in the router.
- */
-app.use('/helloworld', templateRouter)
+ */ 
+app.use('/', voyageRouter)
 
 /* Step 5
  *
