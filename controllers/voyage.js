@@ -14,7 +14,6 @@ voyageRouter.get('/voyage/edit/:voyageId', (req, res) => {
     })
 })
 
-
 //getAll
 voyageRouter.get('/voyage', (req, res) => {
   voyageApi.getAllVoyage()
@@ -27,28 +26,32 @@ voyageRouter.get('/voyage', (req, res) => {
 voyageRouter.get('/voyage/:voyageId', (req, res) => {
   voyageApi.getSingleVoyage(req.params.voyageId)
     .then((singleVoyage) => {
-      res.json(singleVoyage)
+      res.render('singleVoyage', singleVoyage)
+ //     res.json(singleVoyage)
     })
 })
 //update
 voyageRouter.put('/voyage/:voyageId', (req, res) => {
   voyageApi.editVoyage(req.params.voyageId, req.body)
     .then((editVoyage) => {
-      res.json(editVoyage)
+      res.redirect(`/voyage/${req.params.voyageId}`)
+ //     res.json(editVoyage)
     })
 })
 //create ****************for some reason it is not changing the inner workings just making an id and ish. idk.
 voyageRouter.post('/voyage', (req, res) => {
   voyageApi.addNewVoyage(req.body)
     .then((createVoyage) => {
-      res.json(createVoyage)
+      res.redirect('/voyage')
+ //     res.json(createVoyage)
     })
 })
 //delete
 voyageRouter.delete('/voyage/:voyageId', (req, res) => {
   voyageApi.deleteVoyage(req.params.voyageId)
     .then((deleteVoyage) => {
-      res.json(deleteVoyage)
+      res.redirect('/voyage')
+//      res.json(deleteVoyage)
     })
 })
 
