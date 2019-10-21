@@ -1,0 +1,8 @@
+<h1>Voyager</h1>
+<a href="/voyage/new/">Add Issue</a>
+<ol>
+{{#each allVoyage}}
+<a href="/voyage/{{_id}}"/>
+    <li>{{nameTrip}}</li>
+{{/each}}
+</ol>

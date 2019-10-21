@@ -4,6 +4,18 @@ const voyageApi = require('../models/voyage.js')
 
 const voyageRouter = express.Router()
 
+
+
+
+
+
+
+
+
+
+
+
+
 //getAll
 voyageRouter.get('/voyage', (req, res) => {
   voyageApi.getAllVoyage()
@@ -39,7 +51,6 @@ voyageRouter.delete('/voyage/:voyageId', (req, res) => {
       res.json(deleteVoyage)
     })
 })
-
 
 module.exports = {
   voyageRouter
