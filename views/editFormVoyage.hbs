@@ -1,15 +1,9 @@
-<form method="POST" action="<TODO: models url here (e.g: /accounts)>?_method=PUT">
-
-  <!--
-    Template for creating input form for a string object key called stringMember
-    NOTE: for numeric input fields use `type="number"`
-  -->
-  <input type="text" value="{{<TODO: model.stringMember>}}" name="<TODO: stringMember (e.g: name)>" />
-
-  <!--
-    Template for creating input form for a boolean object member
-  -->
-  <input type="checkbox" name="<TODO: booleanMember (e.g: isActive)>" value="true" {{#if <TODO: model.booleanMember (e.g: account.isActive)}}checked{{/if}} />
-
-  <input type="submit" value="Update Shop" />
+<form action="/voyage/{{_id}}?_method=PUT" method="POST">
+    <input type="text" name="nameTrip" placeholder="nameTrip" value="{{nameTrip}}"/> <br>
+    <input type="text" name="whereFrom" placeholder="whereFrom" value="{{whereFrom}}"/> <br>
+    <input type="text" name="whereTo" placeholder="whereTo" value="{{whereTo}}"/> <br>
+    <input type="date" name="dateStart" placeholder="dateStart" value="{{dateStart}}"/> <br>
+    <input type="date" name="dateEnd" placeholder="dateEnd" value="{{dateEnd}}"/> <br>
+    <input type="boolean" name="flexibleDate" placeholder="flexibleDate" value="{{flexibleDate}}"/> <br>
+    <input type="submit" value="Save"/>
 </form>

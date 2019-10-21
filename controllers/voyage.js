@@ -5,12 +5,12 @@ const voyageApi = require('../models/voyage.js')
 const voyageRouter = express.Router()
 
 voyageRouter.get('/voyage/new', (req, res) => {
-  res.render('createVoyageForm')
+  res.render('createVoyage')
 })
 voyageRouter.get('/voyage/edit/:voyageId', (req, res) => {
-  voyageApi.getVoyage(req.params.voyageId)
+  voyageApi.getSingleVoyage(req.params.voyageId)
     .then((singleVoyage) => {
-      res.render('editVoyageForm', singleVoyage)
+      res.render('editFormVoyage', singleVoyage)
     })
 })
 
