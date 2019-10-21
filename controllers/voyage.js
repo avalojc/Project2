@@ -15,6 +15,13 @@ voyageRouter.get('/voyage', (req, res) => {
       res.json(allVoyage)
     })
 })
+//getOne 
+voyageRouter.get('/voyage/:voyageId', (req, res) => {
+  voyageApi.getSingleVoyage(req.params.voyageId)
+    .then((singleVoyage) => {
+      res.json(singleVoyage)
+    })
+})
 
 //create
 voyageRouter.post('/voyage', (req, res) => {
