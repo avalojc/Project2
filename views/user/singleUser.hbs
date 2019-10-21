@@ -1,0 +1,16 @@
+<h1>{{_id}}</h1>
+<p> nameTrip: {{nameTrip}}</p>
+<p> whereFrom: {{whereFrom}}</p>
+<p> whereTo: {{whereTo}}</p>
+<p> dateStart: {{dateStart}} </p>
+<p> dateEnd: {{dateEnd}} </p>
+<p> flexibleDate: {{flexibleDate}} </p>
+<a href="/user/edit/{{_id}}">
+        <button>
+                Edit User
+        </button>
+</a>
+<form action="/user/{{_id}}?_method=DELETE" method="POST">
+    <input type="submit" value="Delete User"/>
+ </form> 
+<a href="/user">Go Back</a>

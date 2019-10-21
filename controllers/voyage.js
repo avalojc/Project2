@@ -5,12 +5,12 @@ const voyageApi = require('../models/voyage.js')
 const voyageRouter = express.Router()
 
 voyageRouter.get('/voyage/new', (req, res) => {
-  res.render('createVoyage')
+  res.render('voyage/createVoyage')
 })
 voyageRouter.get('/voyage/edit/:voyageId', (req, res) => {
   voyageApi.getSingleVoyage(req.params.voyageId)
     .then((singleVoyage) => {
-      res.render('editFormVoyage', singleVoyage)
+      res.render('voyage/editFormVoyage', singleVoyage)
     })
 })
 
@@ -18,7 +18,7 @@ voyageRouter.get('/voyage/edit/:voyageId', (req, res) => {
 voyageRouter.get('/voyage', (req, res) => {
   voyageApi.getAllVoyage()
     .then((allVoyage) => {
-      res.render('allVoyage', {allVoyage})
+      res.render('voyage/allVoyage', {allVoyage})
  //     res.json(allVoyage)
     })
 })
@@ -26,7 +26,7 @@ voyageRouter.get('/voyage', (req, res) => {
 voyageRouter.get('/voyage/:voyageId', (req, res) => {
   voyageApi.getSingleVoyage(req.params.voyageId)
     .then((singleVoyage) => {
-      res.render('singleVoyage', singleVoyage)
+      res.render('voyage/singleVoyage', singleVoyage)
  //     res.json(singleVoyage)
     })
 })
