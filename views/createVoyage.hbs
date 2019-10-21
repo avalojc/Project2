@@ -1,12 +1,10 @@
-<form method="POST" action="/<TODO: models url here (e.g: /accounts)>">
-
-  <!--
-    Template for creating input form for a string object key called stringMember
-    NOTE: for numeric input fields use `type="number"`
-  --->
-  <input type="text" value="{{<TODO: model.stringMember (e.g: account.name)}}" placeholder="name" name="<TODO: stringMember (e.g: name)>" />
-
-  <input type="checkbox" name="<TODO: model.booleanMember (e.g: account.isActive)" value="true" />
-
-  <input type="submit" value="Create Shop" />
+<h1> Create New voyage</h1>
+<form action="/voyage" method="POST">
+    <input type="text" name="nameTrip" placeholder="nameTrip" /> <br>
+    <input type="text" name="whereFrom" placeholder="whereFrom" /> <br>
+    <input type="text" name="whereTo" placeholder="whereTo" /> <br>
+    <input type="date" name="dateStart" placeholder="dateStart" /> <br>
+    <input type="date" name="dateEnd" placeholder="dateEnd" /> <br>
+    <input type="boolean" name="flexibleDate" placeholder="flexibleDate" /> <br>
+    <input type="submit" value="Save"/>
 </form>
