@@ -9,6 +9,7 @@ const LeggerSchema = new mongoose.Schema({
   direction: Boolean, //going home or coming back
   oneWayOrRoundTrip: Boolean, //round trip or one way?
   methodOfTransport: String, //Planes, Trains, Automobile, Bus, Scooter, Hitchhiking, TukTuk, ect
+  timeOfLeg: Number,
   costOfLeg: Number,
 })
 

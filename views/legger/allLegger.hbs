@@ -1,8 +1,18 @@
 <h1>Legger</h1>
 <a href="/legger/new/">Add Leg</a>
+<div>Voyage Name</div>
 <ol>
 {{#each allLegger}}
 <a href="/legger/{{_id}}">
-    <li>{{leg}}</li> </a>
+    <li>
+        <div class="infoBlock">
+            {{leg}} <br>
+            ${{costOfLeg}}<br>
+            Hours Traveling: {{timeOfLeg}} <br>
+            Initial:{{hubInitial}}<br>
+            Terminus:{{hubTerminus}}
+        </div>
+    </li> 
+</a>
 {{/each}}
 </ol>
