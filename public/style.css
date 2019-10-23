@@ -33,7 +33,17 @@ table {
 	border-spacing: 0;
 }
 :root{
-	--x: 1;
+	--x: 0; /* controls transparency of elements that will be invisable on final product */
+	--y: .95; /* transparency of elements that will be solid on final product */
+	--z: 208, 211, 212,; /* color of the header and footer on hover, and leg left right containers */
+	--a: .85; /*transparency of hovered elements*/
+	--b: 173, 164, 174,;/*color of header footer*/
+	--c: 255, 0, 0,; /*color of infoblocks*/
+	--d: 128, 128, 128,;/* color of infoblock:hover */
+	--e: 221, 55, 221,; /*color or rows*/
+	--f: ;
+	--g: ;
+
 }
 html {
 	background-image: url("/image/icons-of-travel.png");
@@ -65,7 +75,7 @@ wrapper {
 	flex-direction: column;
 }
 header, footer {
-	background-color: rgb(173, 164, 174, 0.835);
+	background-color: rgb(var(--b) var(--a));
 	width: 100%;
 	padding: 10px;
 	font: black;
@@ -73,19 +83,19 @@ header, footer {
 	font-family: 'Shadows Into Light', cursive;
 }
 
-header, footer, .infoBlock, button, input{
+header, footer, .infoBlock, button, input, .row, .contained{
 	border-radius: 20px;
 }
 
 header:hover, footer:hover {
-	background-color: rgba(208, 211, 212, 0.835);
+	background-color: rgba(var(--z) var(--a));
 }
 h1 {
 	margin: 0 20px 0 20px;
 	font-size: 2em;
 }
 .infoBlock {
-	background-color: rgba(255, 0, 0, var(--x));
+	background-color: rgba(var(--c) var(--y));
 	border: 2px solid #000;
 	margin: 1px;
 	height: 100px;
@@ -97,8 +107,7 @@ h1 {
 	text-align: center;
 }
 .infoBlock:hover {
-	background-color: rgba(128, 128, 128, var(--x));
-	color: rgba(55, 55, 221, 0.678) ;
+	background-color: rgba(var(--d) var(--y));
 }
 a {
 	color: blue ;
@@ -115,12 +124,12 @@ header h1 a:hover, footer h1 a:hover {
 	align-items: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
-	background-color: rgba(255, 255, 0, var(--x));
+	background-color: rgba(var(--e) var(--x));
 	height: 75%;
 	width: 95%;
 }
 #left, #playTable {
-	background-color: rgba(255, 99, 71, var(--x));
+	background-color: rgba(var(--z) var(--y));
 	height: 99.5%;
 	width: 49%;
 	margin: 1px;
@@ -130,7 +139,7 @@ header h1 a:hover, footer h1 a:hover {
 	align-content: flex-start;
 }	
 .row {
-	background-color: rgba(221, 55, 221, var(--x));
+	background-color: rgba(221, 55, 221, var(--y));
 	height: 30%;
 	width: 99%;
 	margin-top: 15px;
@@ -138,7 +147,10 @@ header h1 a:hover, footer h1 a:hover {
 button, input {
 	background-color: rgb(240, 255, 224);
 }
-#allusercon div {
+#allusercon ol, #allvoycon ol {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: flex-start;
 }
