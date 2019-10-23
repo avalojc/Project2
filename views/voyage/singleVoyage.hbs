@@ -1,7 +1,8 @@
 <h1>{{singleVoyage._id}}</h1>
-<p> nameTrip: {{singleVoyage.nameTrip}}</p>
-<p> whereFrom: {{singleVoyage.whereFrom}}</p>
-<p> whereTo: {{singleVoyage.whereTo}}</p>
+<div id="container"> <div id="singlevoyagecon">
+<p> Trip Name: {{singleVoyage.nameTrip}}</p>
+<p> Origin: {{singleVoyage.whereFrom}}</p>
+<p> Destination: {{singleVoyage.whereTo}}</p>
 <p> dateStart: {{singleVoyage.dateStart}} </p>
 <p> dateEnd: {{singleVoyage.dateEnd}} </p>
 <p> flexibleDate: {{singleVoyage.flexibleDate}} </p>
@@ -15,7 +16,7 @@
  </form> 
 {{#each voyageUser}}
     <p>{{nameTrip}}</p>
-    <p><a href="/legger">Go to Legs of Voyage</a></p>
 {{/each}}
-
+        <p><a href="/legger">Go to Legs of Voyage</a></p>
 <a href="/voyage">Go Back</a>
+</div></div>

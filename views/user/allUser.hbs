@@ -1,12 +1,22 @@
-<h1>User</h1>
-<a href="/user/new/">
-    <button>
-        Add User
-    </button>
-</a>
-<ol>
-{{#each allUser}}
-<a href="/user/{{_id}}">
-    <li>{{user}}{{leg}}</li> </a>
-{{/each}}
-</ol>
+<h1>Guestbook</h1>
+<div id="container">
+    <a href="/user/new/">
+        <button>
+            Sign our Guestbook
+        </button>
+    </a>
+    <div id="allusercon">
+        <ol>
+        {{#each allUser}}
+            <div class="infoBlock">
+                <a href="/user/{{_id}}"> 
+                    <li>
+                        {{user}}<br>
+                        {{password}}
+                    </li> 
+                </a>
+            </div>
+        {{/each}}
+        </ol>
+    </div>
+</div>

@@ -1,6 +1,8 @@
-<h1>{{_id}}</h1>
-<p> user: {{user}}</p>
-<p> password: {{password}}</p>
+<h1>entry : {{_id}}</h1>
+<div id="container">
+        <div id="singleusercon">
+<p> guest: {{user}}</p>
+<p> note: {{password}}</p>
 <p> <a href="/voyage">Go to Voyages</a></p>
 {{!-- <p> voyageId: {{voyageId}}</p> --}}
 <a href="/user/edit/{{_id}}">
@@ -10,3 +12,4 @@
     <input type="submit" value="Delete User"/>
  </form> 
 <a href="/user">Go Back</a>
+</div></div>

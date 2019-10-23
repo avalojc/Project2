@@ -1,8 +1,11 @@
-<h1>Voyager</h1>
-<a href="/voyage/new/">Add Voyage</a>
-<ol>
-{{#each allVoyage}}
+<h1>Voyager</h1><a href="/voyage/new/">Add Voyage</a>
+<div id="container">
+    <div id="allvoycon">
+        <ol>
+        {{#each allVoyage}}
 
-    <li><div class="infoBlock"><a href="/voyage/{{_id}}">{{nameTrip}}</a></div></li> 
-{{/each}}
-</ol>
+            <li><div class="infoBlock"><a href="/voyage/{{_id}}">{{nameTrip}}</a></div></li> 
+        {{/each}}
+        </ol>
+    </div>
+</div>

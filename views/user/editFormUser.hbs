@@ -1,6 +1,8 @@
-<h1>Edit User</h1>
-<form action="/user/{{singleUser._id}}?_method=PUT" method="POST">
+<h1>Edit Guestbook Entry</h1>
+<div id="container">
+<form action="/user/{{_id}}?_method=PUT" method="POST">
     <input type="text" name="user" placeholder="user" value="{{user}}"/> <br>
     <input type="text" name="password" placeholder="password" value="{{password}}"/> <br>
    <input type="submit" value="Save"/>
 </form>
+</div>

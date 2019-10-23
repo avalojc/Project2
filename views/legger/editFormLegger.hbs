@@ -1,12 +1,23 @@
+<div id="container">
 <form action="/legger/{{_id}}?_method=PUT" method="POST">
     <input type="text" name="leg" placeholder="leg" value="{{leg}}"/> <br>
     <input type="text" name="hubInitial" placeholder="hubInitial" value="{{hubInitial}}"/> <br>
     <input type="text" name="hubTerminus" placeholder="hubTerminus" value="{{hubTerminus}}"/> <br>
     <input type="Boolean" name="direction" placeholder="direction" value="{{direction}}"/> <br>
     <input type="Boolean" name="oneWayOrRoundTrip" placeholder="oneWayOrRoundTrip" value="{{oneWayOrRoundTrip}}"/> <br>
-    <input type="text" name="methodOfTransport" placeholder="methodOfTransport" value="{{methodOfTransport}}"/> <br>
+        <input name="methodOfTransport" required="required" list="transportMethods" placeholder="methodOfTransport" />
+        <datalist id="transportMethods">
+            <option value="Automobile">
+            <option value="Bike"> 
+            <option value="Boat">
+            <option value="Bus">
+            <option value="Plane">
+            <option value="Train">
+            <option value="Walk">
+            </option>
+        </datalist> <br>
     <input type="number" name="timeOfLeg" placeholder="timeOfLeg(in hours)" value="{{timeOfLeg}}"/> <br>
     <input type="number" name="costOfLeg" placeholder="costOfLeg" value="{{costOfLeg}}"/> <br>
     <input type="submit" value="Save"/>
 </form>
-timeOfLeg
+</div>
