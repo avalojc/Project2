@@ -38,8 +38,7 @@ table {
 	--z: 208, 211, 212,; /* color of the header and footer on hover, and leg left right containers */
 	--a: .85; /*transparency of hovered elements*/
 	--b: 173, 164, 174,;/*color of header footer*/
-	--c: 255, 0, 0,; /*color of infoblocks*/
-	--d: 128, 128, 128,;/* color of infoblock:hover */
+	--c: 255, 255, 255,; /*color of infoblocks*/
 	--e: 221, 55, 221,; /*color or rows*/
 	--f: ;
 	--g: ;
@@ -107,7 +106,7 @@ h1 {
 	text-align: center;
 }
 .infoBlock:hover {
-	background-color: rgba(var(--d) var(--y));
+	border: 2px dotted rgb(0, 0, 0);
 }
 a {
 	color: blue ;
@@ -153,4 +152,7 @@ button, input {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-content: flex-start;
+}
+#thumb {
+	width: 20px;
 }
