@@ -9,26 +9,33 @@ $( () => {
     $( "#1" ).droppable({
       drop: function( event, ui ) {
         $( this )
-          .addClass( "ui-state-highlight" )
           .find( "#row1HoursData" )
             .html(a);
-      }
+        $( this ) 
+          .find( "#row1SData" )
+            .html(b);
+      } 
     });
     $( "#2" ).droppable({
         drop: function( event, ui ) {
           $( this )
-            .addClass( "ui-state-highlight" )
-            .find( ".data" )
+            .find( "#row2HoursData" )
               .html(a);
-        }
+          $( this ) 
+            .find( "#row2SData" )
+              .html(b);
+        } 
       });
       $( "#3" ).droppable({
         drop: function( event, ui ) {
           $( this )
-            .addClass( "ui-state-highlight" )
-            .find( ".data" )
+            .find( "#row3HoursData" )
               .html(a);
-        }
+          $( this ) 
+            .find( "#row3SData" )
+              .html(b);
+        } 
       });
+
   } );
   console.log('Ran Bruh')
