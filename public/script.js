@@ -5,13 +5,30 @@ $( () => {
     $( ".infoBlock" ).draggable();
     // let a = document.getElementsByClassName("infoBlock")
     let a = "xxx"
-    $( ".row" ).droppable({
+    let b = "yyy"
+    $( "#1" ).droppable({
       drop: function( event, ui ) {
         $( this )
           .addClass( "ui-state-highlight" )
-          .find( ".data" )
+          .find( "#row1HoursData" )
             .html(a);
       }
     });
+    $( "#2" ).droppable({
+        drop: function( event, ui ) {
+          $( this )
+            .addClass( "ui-state-highlight" )
+            .find( ".data" )
+              .html(a);
+        }
+      });
+      $( "#3" ).droppable({
+        drop: function( event, ui ) {
+          $( this )
+            .addClass( "ui-state-highlight" )
+            .find( ".data" )
+              .html(a);
+        }
+      });
   } );
   console.log('Ran Bruh')
