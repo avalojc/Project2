@@ -36,12 +36,12 @@ $( () => {
       });
   } );
   console.log('Ran Bruh')
-thumbnails = () => {
-    let thumbEl= document.getElementsByClassName('thumb')
-    if(thumbEl.innerHTML = "airplane") {
-        let img = thumbEl.createElement('img');
-        img.src = "/image/plane.png";
-        thumbEl.appendChild(img);
-    }
-}
-thumbnails()
+// thumbnails = () => {
+//     let thumbEl= document.getElementsByClassName('thumb')
+//     if(thumbEl.innerHTML = "airplane") {
+//         let img = thumbEl.createElement('img');
+//         img.src = "/image/plane.png";
+//         thumbEl.appendChild(img);
+//     }
+// }
+// thumbnails()
