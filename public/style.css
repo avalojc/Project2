@@ -102,6 +102,12 @@ h1 {
 	margin: 0 20px 0 20px;
 	font-size: 2em;
 }
+h2 {
+	font-size: 1.25em;;
+}
+h3 {
+	font-size: .75em;
+}
 .infoBlock {
 	background-color: rgba(var(--c) var(--y));
 	border: 2px dotted rgb(190, 190, 190);
@@ -169,4 +175,10 @@ button, input {
 }
 #thumb {
 	width: 20px;
+}
+.adder {
+	display: inline;
+}
+.thumb {
+	display: none;
 }

@@ -3,12 +3,13 @@
 <div id="container">
     <div class="contained" id="left">
     {{#each allLegger}}
-        <div class="infoBlock"><a href="/legger/{{_id}}">
-            {{leg}} <br>
-            ${{costOfLeg}}<br>
-            Hours Traveling: {{timeOfLeg}} <br>
-            Initial:{{hubInitial}}<br>
-            Terminus:{{hubTerminus}}</a>
+        <div class="infoBlock">
+            <a href="/legger/{{_id}}">
+                {{leg}} <div class="thumb">{{methodOfTransport}}</div><br> 
+                <h3><br>Start: {{hubInitial}} <br> End: {{hubTerminus}} <br><br></h3>
+                
+                <h2>$<div class="adder">{{costOfLeg}}</div> Hours: {{timeOfLeg}} <br></h2>
+            </a>
             
             <div class="image"></div>
             
@@ -16,8 +17,14 @@
     {{/each}}
     </div>
     <div class="contained" id="playTable">
-        <div class="row" id="1"></div>
-        <div class="row" id="2"></div>
-        <div class="row" id="3"></div>
+        <div class="row" id="1">
+            <div class="adder" id="uno"></div>
+        </div>
+        <div class="row" id="2">
+            <div class="adder" id="dos"></div>
+        </div>
+        <div class="row" id="3">
+            <div class="adder" id="tres"></div>
+        </div>
     </div>
 </div>
