@@ -112,8 +112,8 @@ h3 {
 	background-color: rgba(var(--c) var(--y));
 	border: 2px dotted rgb(190, 190, 190);
 	margin: 1px;
-	height: 100px;
-	width: 100px;
+	height: 80px;
+	width: 80px;
 	font-size: .75em;
 	display: flex;
 	justify-content: center;
@@ -196,3 +196,6 @@ button, input {
 .hideLegName {
 	display: none;
 }
+
+
+
