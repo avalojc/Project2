@@ -193,3 +193,6 @@ button, input {
 .thumb {
 	display: inline;
 }
+.hideLegName {
+	display: none;
+}
