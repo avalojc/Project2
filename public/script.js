@@ -1,11 +1,9 @@
 console.log('Hello world')
-
-
 $( () => {
     $( ".infoBlock" ).draggable();
     // let a = document.getElementsByClassName("infoBlock")
-    let a = "xxx"
-    let b = "yyy"
+    let a = 01
+    let b = 10
     $( "#1" ).droppable({
       drop: function( event, ui ) {
         $( this )
@@ -36,6 +34,14 @@ $( () => {
               .html(b);
         } 
       });
-
   } );
   console.log('Ran Bruh')
+thumbnails = () => {
+    let thumbEl= document.getElementsByClassName('thumb')
+    if(thumbEl.innerHTML = "airplane") {
+        let img = thumbEl.createElement('img');
+        img.src = "/image/plane.png";
+        thumbEl.appendChild(img);
+    }
+}
+thumbnails()
