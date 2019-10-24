@@ -34,15 +34,24 @@ table {
 }
 :root{
 	--x: 0; /* controls transparency of elements that will be invisable on final product */
-	--y: .95; /* transparency of elements that will be solid on final product */
+	--y: 1; /* transparency of elements that will be solid on final product */
 	--z: 208, 211, 212,; /* color of the header and footer on hover, and leg left right containers */
 	--a: .85; /*transparency of hovered elements*/
 	--b: 173, 164, 174,;/*color of header footer*/
 	--c: 255, 255, 255,; /*color of infoblocks*/
-	--e: 221, 55, 221,; /*color or rows*/
+	--e: 0, 176, 240,; /*color or rows*/
 	--f: ;
 	--g: ;
-
+ /* List of Colors of Icons 
+ bike color 49, 133, 156
+ walk color 255, 192, 0
+ moto color 149, 55, 53
+ train color 146, 208, 80
+ plane color 96, 74, 123
+ bus color 228, 108, 10
+ boat color 0, 176, 240
+ auto color 119, 147, 60
+ */
 }
 html {
 	background-image: url("/image/icons-of-travel.png");
@@ -82,7 +91,7 @@ header, footer {
 	font-family: 'Shadows Into Light', cursive;
 }
 
-header, footer, .infoBlock, button, input, .row, .contained{
+header, footer, .infoBlock, button, input, .row, .contained, .singleOnly{
 	border-radius: 20px;
 }
 
@@ -95,7 +104,7 @@ h1 {
 }
 .infoBlock {
 	background-color: rgba(var(--c) var(--y));
-	border: 2px solid #000;
+	border: 2px dotted rgb(190, 190, 190);
 	margin: 1px;
 	height: 100px;
 	width: 100px;
@@ -106,7 +115,8 @@ h1 {
 	text-align: center;
 }
 .infoBlock:hover {
-	border: 2px dotted rgb(0, 0, 0);
+	border: 2px dotted rgb(34, 34, 34);
+	background-color: rgba(var(--c) var(--a));
 }
 a {
 	color: blue ;
@@ -137,8 +147,12 @@ header h1 a:hover, footer h1 a:hover {
 	justify-content: space-evenly;
 	align-content: flex-start;
 }	
+.singleOnly{
+	background-color: rgba(var(--z) var(--y));
+	padding: 1em;
+}
 .row {
-	background-color: rgba(221, 55, 221, var(--y));
+	background-color: rgba(var(--e) var(--y));
 	height: 30%;
 	width: 99%;
 	margin-top: 15px;
