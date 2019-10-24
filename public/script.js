@@ -1,6 +1,9 @@
 console.log('Hello world')
 $( () => {
-    $( ".infoBlock" ).draggable();
+    $( ".infoBlock" ).draggable({
+        harry: tim = () => {console.log("itsawalking")},
+  
+    });
     // let a = document.getElementsByClassName("infoBlock")
     let a = 01
     let b = 10
@@ -12,7 +15,11 @@ $( () => {
         $( this ) 
           .find( "#row1SData" )
             .html(b);
+        console.log(event.target.innerHTML);
+        console.log(this)
+        console.log(document.getElementsByClassName(".infoBlock"))
       } 
+      
     });
     $( "#2" ).droppable({
         drop: function( event, ui ) {
