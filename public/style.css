@@ -91,7 +91,7 @@ header, footer {
 	font-family: 'Shadows Into Light', cursive;
 }
 
-header, footer, .infoBlock, button, input, .row, .contained, .singleOnly{
+header, footer, .infoBlock, button, input, .row, .contained, .singleOnly, .adder{
 	border-radius: 20px;
 }
 
@@ -162,6 +162,17 @@ header h1 a:hover, footer h1 a:hover {
 	height: 30%;
 	width: 99%;
 	margin-top: 15px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.adder {
+	background-color: rgba(var(--z) var(--y));
+	height: 40px;
+	width: 40px;
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
 }
 button, input {
 	background-color: rgb(240, 255, 224);
@@ -176,7 +187,7 @@ button, input {
 #thumb {
 	width: 20px;
 }
-.adder {
+.val {
 	display: inline;
 }
 .thumb {
