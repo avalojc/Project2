@@ -6,5 +6,5 @@ Trello Board:
 https://trello.com/b/cYPYfFmj/projectdos
 
 
-(/public/image/wireframe-and-erd.jpg)
-(/public/image/wireframe-and-erd2.jpg)
+![image1](/public/image/wireframe-and-erd.jpg)
+![image2](/public/image/wireframe-and-erd2.jpg)
