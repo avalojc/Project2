@@ -111,9 +111,9 @@ h3 {
 .infoBlock {
 	background-color: rgba(var(--c) var(--y));
 	border: 2px dotted rgb(190, 190, 190);
-	margin: 1px;
-	height: 80px;
-	width: 80px;
+	margin: 5px;
+	height: 100px;
+	width: 100px;
 	font-size: .75em;
 	display: flex;
 	justify-content: center;
@@ -125,7 +125,7 @@ h3 {
 	background-color: rgba(var(--c) var(--a));
 }
 a {
-	color: blue ;
+	color: rgb(0, 9, 39) ;
 }
 header h1 a, footer h1 a {
 	color: whitesmoke;
@@ -159,21 +159,21 @@ header h1 a:hover, footer h1 a:hover {
 }
 .row {
 	background-color: rgba(var(--e) var(--y));
-	height: 30%;
+	height: 25%;
 	width: 99%;
 	margin-top: 15px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
-.adder {
+/* .adder {
 	background-color: rgba(var(--z) var(--y));
 	height: 40px;
 	width: 40px;
 	margin: 5px;
 	padding: 10px;
 	text-align: center;
-}
+} */
 button, input {
 	background-color: rgb(240, 255, 224);
 }
@@ -197,5 +197,14 @@ button, input {
 	display: none;
 }
 
-
-
+div h1 {
+	font-weight: 900;
+	margin: 15px;
+	text-align: center;
+}
+#board {
+	padding: 5px;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+}

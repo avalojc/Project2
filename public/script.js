@@ -1,8 +1,7 @@
 console.log('Hello world')
 $( () => {
     $( ".infoBlock" ).draggable({
-        harry: tim = () => {console.log("itsawalking")},
-  
+        // harry: tim = () => {console.log("itsawalking")},
     });
     // let a = document.getElementsByClassName("infoBlock")
     let a = 01
@@ -31,7 +30,7 @@ $( () => {
               .html(b);
         } 
       });
-      $( "#3" ).droppable({
+    $( "#3" ).droppable({
         drop: function( event, ui ) {
           $( this )
             .find( "#row3HoursData" )

@@ -2,6 +2,7 @@
 <h1>Legs</h1><a href="/legger/new/">Add Leg</a>
 <div id="container">
     <div class="contained" id="left">
+    <h1 id="board">Leg Board</h1>
     {{#each allLegger}}
         <div class="infoBlock">
             <a href="/legger/{{_id}}">
@@ -15,26 +16,27 @@
     {{/each}}
     </div>
     <div class="contained" id="playTable">
+        <h1>Pin your Legs to this board to organize a trip</h1>
         <div class="row" id="1">
-            <div class="adder" id="uno"> 
+            {{!-- <div class="adder" id="uno"> 
                 H: <div class="data" id=row1HoursData></div>
                 <br>
                 $: <div class="data" id=row1SData></div>
-            </div>
+            </div> --}}
         </div>
         <div class="row" id="2"> 
-            <div class="adder" id="dos">
+            {{!-- <div class="adder" id="dos">
                 H: <div class="data" id=row2HoursData></div>
                 <br>
                 $: <div class="data" id=row2SData></div>
-            </div>
+            </div> --}}
         </div>
         <div class="row" id="3">
-            <div class="adder" id="tres">
+            {{!-- <div class="adder" id="tres">
                  H: <div class="data" id=row3HoursData></div>
                 <br>
                 $: <div class="data" id=row3SData></div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
